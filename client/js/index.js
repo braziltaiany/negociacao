@@ -17,10 +17,10 @@ document.querySelector('.form').addEventListener('submit', function (event) {
     td.textContent = campo.value;
     tr.appendChild(td);
   });
+mpos[1].value * campos[2].value;
 
   var tdVolume = document.createElement('td');
-  tdVolume.textContent = campos[1].value * campos[2].value;
-
+  tdVolume.textContent = ca
   tr.appendChild(tdVolume);
   tbody.appendChild(tr);
 

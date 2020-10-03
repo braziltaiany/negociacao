@@ -67,6 +67,16 @@
 
       <tfoot></tfoot>
     </table>
-    <script src="js/index.js"></script>
+    <script src="js/app/models/Negociacao.js"></script>
+    <script>
+      /* criar duas instância de negociação
+       ou seja, dois objetos criados a partir da classe Negociacao */
+      var n1 = new Negociacao();
+      n1.quantidade = 10;
+      console.log(n1);
+      var n2 = new Negociacao();
+      n2.quantidade = 20;
+      console.log(n2);
+    </script>
   </body>
 </html>
