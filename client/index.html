@@ -69,18 +69,15 @@
     </table>
     <script src="js/app/models/Negociacao.js"></script>
     <script>
-      /* criar duas instância de negociação
-       ou seja, dois objetos criados a partir da classe Negociacao */
-      var n1 = new Negociacao(new Date(), 5, 700);
-      //n1.quantidade = 1000;
-      // n1._quantidade = 5000;
-      /* Object.freeze(n1);
-      n1._quantidade = 5000; */
-      n1._quantidade = 5000;
+      var hoje = new Date();
+
+      var n1 = new Negociacao(hoje, 5, 700);
+
       console.log(n1.data);
-      console.log(n1.quantidade);
-      console.log(n1.valor);
-      console.log(n1.volume);
+
+      hoje.setDate(11);
+
+      console.log(n1.data);
     </script>
   </body>
 </html>
