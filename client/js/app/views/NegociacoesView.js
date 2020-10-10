@@ -14,23 +14,25 @@ class NegociacoesView {
                 <th>VOLUME</th>
             </tr>
         </thead>
+
         <tbody>
-        ${model.negociacoes
-          .map(
-            (n) => `
-    
+         ${model.negociacoes.map(i => `
+              
               <tr>
-                <td>${DateHelper.dataParaTexto(n.data)}</td>
-                <td>${n.quantidade}</td>
-                <td>${n.valor}</td>
-                <td>${n.volume}</td>
+                <td>${DateHelper.dataParaTexto(i.data)}</td>
+                <td>${i.quantidade}</td>
+                <td>${i.valor}</td>
+                <td>${i.volume}</td>
               </tr>
-    
-          `
-          )
-          .join('')}
-    </tbody>
-        <tfoot></tfoot>
+              
+            `).join('')}
+        </tbody>
+        
+        <tfoot>
+          <td colspan="3"></td>
+          <td>${model.negociacoes.reduce((total, i) => total + i.volume, 0.0)}</td>
+          
+        </tfoot>
     </table>
       `;
   }
