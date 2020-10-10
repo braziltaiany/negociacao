@@ -4,7 +4,7 @@ class MensagemView extends View {
         super(elemento);
     }
 
-    _template(model) {
+    template(model) {
         // se o texto estiver vazio/null,indefinido vai dar falso, 
         // ? se for verdadeiro devolve esse template( classe alert alert-info)
         //senão ( : ) - devolve um paragrafo sem a classe alert alert-info
