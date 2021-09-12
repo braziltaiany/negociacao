@@ -6,4 +6,4 @@
 * o paradigma orientado a objetos ao funcional para resolver problemas
 * Aplicação de novos recursos do ECMASCRIPT 6
 * Estruturação da aplicação no modelo MVC
-* Utilize padrões de projeto
+* Utilização de padrões de projeto
